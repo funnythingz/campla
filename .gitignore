@@ -1,17 +1,9 @@
-# Ignore uploaded files in development.
-/storage/*
-!/storage/.keep
-
-/public/assets
-
-# Ignore master key for decrypting credentials and more.
-/config/master.key
-
 *.rbc
 capybara-*.html
 .rspec
 /db/*.sqlite3
 /db/*.sqlite3-journal
+/db/*.sqlite3-[0-9]*
 /public/system
 /coverage/
 /spec/tmp
@@ -24,6 +16,16 @@ certificate/*
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
 
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+config/master.key
+
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
 
@@ -34,6 +36,7 @@ config/initializers/secret_token.rb
 ## Environment normalization:
 /.bundle
 /vendor/bundle
+<<<<<<< HEAD
 /vendor/.keep
 
 # these should all be checked in to normalize the environment:
@@ -53,6 +56,7 @@ bower.json
 # Ignore Byebug command history file.
 .byebug_history
 
+<<<<<<< HEAD
 /log/*
 /tmp/*
 !/log/.keep
@@ -95,3 +99,19 @@ yarn-debug.log*
 .idea
 .envrc
 .solargraph.yml
+# Ignore node_modules
+node_modules/
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
