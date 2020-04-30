@@ -13,6 +13,7 @@ gem "slim"
 gem "sass"
 gem "draper"
 gem "by_star"
+gem "listen"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
