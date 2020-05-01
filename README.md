@@ -1,24 +1,17 @@
 # CAMPLA
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## dev
 
-Things you may want to cover:
+```
+$ bundle exec rails s
+```
 
-* Ruby v2.7.1
+```
+$ yarn run dev
+```
 
-* System dependencies
+build
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ yarn run build:dev
+```
