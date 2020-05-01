@@ -5,6 +5,10 @@
   "repository": "git@github.com:funnythingz/campla.git",
   "author": "funnythingz <funnythingz69+github@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build:dev": "webpack --progress --mode=development",
+    "build:prod": "webpack --progress --mode=production"
+  },
   "resolutions": {
     "**/**/fsevents": "^1.2.9",
     "node-sass": "^4.12.0",
