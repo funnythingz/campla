@@ -31,7 +31,7 @@ module WebpackBundleHelper
   private
 
   def asset_server
-    port = Rails.env === "development" ? "8888" : "3000"
+    port = Rails.env === "development" ? "3035" : "3000"
     "http://#{request.host}:#{port}"
   end
 

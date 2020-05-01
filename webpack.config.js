@@ -102,6 +102,15 @@ module.exports = (env, argv) => {
           }
         }
       }
+    },
+    devServer: {
+      host: 'localhost',
+      port: 3035,
+      publicPath: 'http://localhost:3035/public/assets/',
+      contentBase: path.resolve(__dirname, 'public/assets'),
+      hot: true,
+      disableHostCheck: true,
+      historyApiFallback: true
     }
   }
 }

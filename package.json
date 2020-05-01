@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack --progress --mode=development",
-    "build:prod": "webpack --progress --mode=production"
+    "build:prod": "webpack --progress --mode=production",
+    "dev": "yarn run webpack-dev-server --mode development"
   },
   "resolutions": {
     "**/**/fsevents": "^1.2.9",
