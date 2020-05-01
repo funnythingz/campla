@@ -36,7 +36,6 @@ config/master.key
 ## Environment normalization:
 /.bundle
 /vendor/bundle
-<<<<<<< HEAD
 /vendor/.keep
 
 # these should all be checked in to normalize the environment:
@@ -56,20 +55,6 @@ bower.json
 # Ignore Byebug command history file.
 .byebug_history
 
-<<<<<<< HEAD
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
-
-/yarn-error.log
-
-/public/packs
-/public/packs-test
-/node_modules
-yarn-debug.log*
-.yarn-integrity
-
 *.swp
 .DS_Store
 
@@ -88,13 +73,7 @@ docker/config/*
 # YARD
 .yardopts
 .yardoc
-
-/public/packs
-/public/packs-test
 /node_modules
-/yarn-error.log
-yarn-debug.log*
-.yarn-integrity
 *__back
 .idea
 .envrc
