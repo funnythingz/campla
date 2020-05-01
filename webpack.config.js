@@ -61,7 +61,7 @@ module.exports = (env, argv) => {
           loader: 'pug-plain-loader'
         },
         {
-          test: /\.(c|sc|sa)ss$/,
+          test: /\.(sa|sc|c)ss$/,
           use: [
             {
               loader: MiniCssExtractPlugin.loader,
@@ -96,7 +96,7 @@ module.exports = (env, argv) => {
       splitChunks: {
         cacheGroups: {
           vendor: {
-            test: /.(c|sa)ss/,
+            test: /\.(sa|sc|c)ss$/,
             name: 'style',
             chunks: 'all',
             enforce: true
