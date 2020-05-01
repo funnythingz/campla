@@ -7,7 +7,8 @@ const ManifestPlugin = require('webpack-manifest-plugin')
 
 let entries = {}
 glob.sync('./frontend/pages/**/*.js').map(function(file) {
-  let name = file.split('/')[4].split('.')[0]
+  const position = 4
+  let name = file.split('/').map(function(v, k){if(position <= k){return v}}).filter(function(e){return e}).join('/').split('.')[0]
   entries[name] = file
 })
 
